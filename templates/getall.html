@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>All Messages</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="container">
+            <div class="title">
+                <h1>All Messages</h1>
+            </div>
+            <div id="content">
+				<table>
+				<tr><th>Name</th><th>Message</th></tr>
+				{% for n in r %}
+					<tr><td>{{ n[1] }}</td><td>{{ n[2] }}</td></tr>
+				{% endfor %}
+				</table>
+            </div>
+        </div>
+    </body>
+</html>

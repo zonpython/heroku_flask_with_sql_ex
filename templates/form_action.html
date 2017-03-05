@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Posted Message</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="container">
+            <div class="title">
+                <h1>Posted Message</h1><a href='/get'> (Get All Messages)</a>
+            </div>
+            <div id="content">
+                Hello <strong>{{name}}</strong> ({{msg}})!
+            </div>
+        </div>
+    </body>
+</html>
